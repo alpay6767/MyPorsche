@@ -31,6 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    static func getUserFromDefaults() -> User {
+        
+        let defaults = UserDefaults.standard
+        let email = defaults.string(forKey: "email")
+        let password = defaults.string(forKey: "password")
+        let foundUser = User(email: email!, password: password!)
+        return foundUser
+        
+    }
+    
+    static func saveUserInDefaults(currentUser: User) {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "LoggedIn")
+        defaults.set(currentUser.email, forKey: "email")
+        defaults.set(currentUser.password, forKey: "password")
+        
+    }
 
 }
 

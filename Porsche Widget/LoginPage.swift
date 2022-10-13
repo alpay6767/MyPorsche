@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import PorscheConnect
 
 class LoginPage: UIViewController {
     
@@ -24,11 +23,13 @@ class LoginPage: UIViewController {
     @IBAction func login(_ sender: Any)  {
         porscheConnect = PorscheConnect(username: email_textfield.text!,
                                             password: password_textfield.text!)
+    
+        Home.porscheManager.currentUser = User(email: email_textfield.text!, password: password_textfield.text!)
         
-        print("logging in!")
         Task {
-                try await getVehicles()
+            try await executeLogin()
         }
+        
         
     }
     
@@ -45,21 +46,36 @@ class LoginPage: UIViewController {
         self.dismiss(animated: true)
     }
     
-    
-    func getVehicles() async {
+    func executeLogin() async throws {
+        let application: Application = .Portal
+        
         do {
-            let result = try! await porscheConnect!.vehicles()
+            try await porscheConnect!.authIfRequired(application: application)
+            AppDelegate.saveUserInDefaults(currentUser: (Home.porscheManager.currentUser!))
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "homenavigationcontroller")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
+        }
+        catch {
+           print("Unexpected error: \(error).")
+       }
+    }
+    
+    
+    func getVehicles() async throws{
+        do {
+            let result = try await porscheConnect!.vehicles()
             if let vehicles = result.vehicles, let response = result.response {
             // Do something with vehicles or raw response
-                Home.porscheManager = PorscheManager(selectedPorsche: vehicles[0])
+                Home.porscheManager.vehicles = vehicles
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "homenavigationcontroller")
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
           }
-        } catch let error{
-          // Handle the error
-            print(error)
+        } catch{
+            print("Unexpected error: \(error).")
         }
     }
     

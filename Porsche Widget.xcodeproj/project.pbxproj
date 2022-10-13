@@ -23,6 +23,8 @@
 		4A8E327628DD08D400A19B27 /* PorscheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327528DD08D400A19B27 /* PorscheManager.swift */; };
 		4A8E327828DD13AE00A19B27 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */; };
 		4A8E327A28DD13D500A19B27 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327928DD13D500A19B27 /* Home.swift */; };
+		4AA8127D28F8585600DB9718 /* SplashscreenPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8127C28F8585600DB9718 /* SplashscreenPage.swift */; };
+		4AA8127F28F85B1600DB9718 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8127E28F85B1600DB9718 /* User.swift */; };
 		4AE4AD2728D5C11A0055FEA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD2628D5C11A0055FEA8 /* AppDelegate.swift */; };
 		4AE4AD2928D5C11A0055FEA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD2828D5C11A0055FEA8 /* SceneDelegate.swift */; };
 		4AE4AD2B28D5C11A0055FEA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD2A28D5C11A0055FEA8 /* ViewController.swift */; };
@@ -69,6 +71,8 @@
 		4A8E327528DD08D400A19B27 /* PorscheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorscheManager.swift; sourceTree = "<group>"; };
 		4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		4A8E327928DD13D500A19B27 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4AA8127C28F8585600DB9718 /* SplashscreenPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenPage.swift; sourceTree = "<group>"; };
+		4AA8127E28F85B1600DB9718 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4AE4AD2328D5C11A0055FEA8 /* Porsche Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Porsche Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE4AD2628D5C11A0055FEA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE4AD2828D5C11A0055FEA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				4A8E327528DD08D400A19B27 /* PorscheManager.swift */,
 				4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */,
 				4A8E327928DD13D500A19B27 /* Home.swift */,
+				4AA8127C28F8585600DB9718 /* SplashscreenPage.swift */,
+				4AA8127E28F85B1600DB9718 /* User.swift */,
 			);
 			path = "Porsche Widget";
 			sourceTree = "<group>";
@@ -455,6 +461,7 @@
 				4A8E327228DD024900A19B27 /* Models.swift in Sources */,
 				4A8E327328DD024900A19B27 /* PorscheConnect+Auth.swift in Sources */,
 				4A8E327A28DD13D500A19B27 /* Home.swift in Sources */,
+				4AA8127D28F8585600DB9718 /* SplashscreenPage.swift in Sources */,
 				4A8E327828DD13AE00A19B27 /* HomeNavigationController.swift in Sources */,
 				4A8E326E28DD024900A19B27 /* NetworkRoutes.swift in Sources */,
 				4A8E326F28DD024900A19B27 /* PorscheConnect+CarControl.swift in Sources */,
@@ -465,6 +472,7 @@
 				4AE4AD2928D5C11A0055FEA8 /* SceneDelegate.swift in Sources */,
 				4A8E327128DD024900A19B27 /* Extensions.swift in Sources */,
 				4A8E326C28DD024900A19B27 /* Constants.swift in Sources */,
+				4AA8127F28F85B1600DB9718 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +658,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -681,6 +690,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

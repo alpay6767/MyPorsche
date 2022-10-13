@@ -7,14 +7,15 @@
 
 import Foundation
 import UIKit
-import PorscheConnect
 
 class PorscheManager {
     
-    var selectedPorsche: Vehicle
+    var selectedPorsche: Vehicle?
+    var vehicles: [Vehicle]?
+    var currentUser: User?
     
-    init(selectedPorsche: Vehicle) {
-        self.selectedPorsche = selectedPorsche
+    init() {
+        
     }
     
 }

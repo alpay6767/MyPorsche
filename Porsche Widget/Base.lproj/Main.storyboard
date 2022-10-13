@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F4J-XY-PmW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -14,20 +14,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewcontrollerpage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_background" translatesAutoresizingMaskIntoConstraints="NO" id="1gx-8R-Gal">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porsche_logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="fbL-X1-Wgl">
-                                <rect key="frame" x="130.5" y="78" width="153" height="81"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="7kX-Sl-yxj"/>
-                                    <constraint firstAttribute="width" constant="153" id="ayg-X7-5Ei"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-Jq-Hz0">
                                 <rect key="frame" x="35" y="717.5" width="344" height="50"/>
@@ -44,6 +37,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porsche_splash_logo_dark" translatesAutoresizingMaskIntoConstraints="NO" id="fbL-X1-Wgl">
+                                <rect key="frame" x="134.5" y="98" width="145" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="6j9-b4-oIS"/>
+                                    <constraint firstAttribute="height" constant="73" id="x4h-6K-NvI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,7 +55,7 @@
                             <constraint firstAttribute="bottom" secondItem="1gx-8R-Gal" secondAttribute="bottom" id="RMe-6R-1Eg"/>
                             <constraint firstItem="3tV-pe-dCL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UjC-M8-PBA"/>
                             <constraint firstItem="C4V-Jq-Hz0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="dDg-mV-Glq"/>
-                            <constraint firstItem="fbL-X1-Wgl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ggv-y5-fuc"/>
+                            <constraint firstItem="fbL-X1-Wgl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ggv-y5-fuc"/>
                             <constraint firstItem="fbL-X1-Wgl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ifK-P8-Z0n"/>
                             <constraint firstItem="1gx-8R-Gal" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ppJ-UM-zBP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1gx-8R-Gal" secondAttribute="trailing" id="szP-Vy-lIU"/>
@@ -194,9 +194,9 @@
         <!--Home Navigation Controller-->
         <scene sceneID="Alz-WX-dxG">
             <objects>
-                <navigationController storyboardIdentifier="homenavigationcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="SCm-17-Hh2" customClass="HomeNavigationController" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="homenavigationcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SCm-17-Hh2" customClass="HomeNavigationController" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b3u-3p-HjU">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -210,40 +210,40 @@
         <!--Home-->
         <scene sceneID="Rbr-r8-7xD">
             <objects>
-                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1In-i5-1kL" customClass="Home" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1In-i5-1kL" customClass="Home" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="04g-MB-Lu4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOB-4w-sog">
-                                <rect key="frame" x="40" y="88" width="110" height="43"/>
-                                <string key="text">Porsche 718 
-Boxster GTS</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porsche 718 Boxster GTS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOB-4w-sog">
+                                <rect key="frame" x="40" y="132" width="334" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13283932493" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvs-tc-Srp">
-                                <rect key="frame" x="40" y="139" width="105.5" height="18"/>
+                                <rect key="frame" x="40" y="161.5" width="105.5" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alpay" translatesAutoresizingMaskIntoConstraints="NO" id="Gx4-DJ-cZa">
-                                <rect key="frame" x="324" y="88" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="f5K-fZ-BW3"/>
-                                    <constraint firstAttribute="width" constant="50" id="gSX-5H-df1"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boxster_gts" translatesAutoresizingMaskIntoConstraints="NO" id="j6m-T4-2Yp">
-                                <rect key="frame" x="0.0" y="167" width="414" height="245"/>
+                                <rect key="frame" x="0.0" y="189.5" width="414" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="6c5-uE-hoz"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-hw-4kQ">
-                                <rect key="frame" x="0.0" y="422" width="414" height="440"/>
+                                <rect key="frame" x="0.0" y="444.5" width="414" height="417.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kz3-IB-6Rv">
                                     <size key="itemSize" width="181" height="181"/>
@@ -285,36 +285,74 @@ Boxster GTS</string>
                             <constraint firstItem="j6m-T4-2Yp" firstAttribute="leading" secondItem="MvV-Dm-fB2" secondAttribute="leading" id="2n5-Cp-BIm"/>
                             <constraint firstItem="MvV-Dm-fB2" firstAttribute="trailing" secondItem="eCw-hw-4kQ" secondAttribute="trailing" id="JI5-Xr-kE1"/>
                             <constraint firstItem="fvs-tc-Srp" firstAttribute="top" secondItem="qOB-4w-sog" secondAttribute="bottom" constant="8" symbolic="YES" id="QGS-P4-b81"/>
-                            <constraint firstItem="MvV-Dm-fB2" firstAttribute="trailing" secondItem="Gx4-DJ-cZa" secondAttribute="trailing" constant="40" id="Spz-kK-6zF"/>
                             <constraint firstItem="qOB-4w-sog" firstAttribute="leading" secondItem="MvV-Dm-fB2" secondAttribute="leading" constant="40" id="U4F-WG-Of9"/>
                             <constraint firstItem="j6m-T4-2Yp" firstAttribute="top" secondItem="fvs-tc-Srp" secondAttribute="bottom" constant="10" id="W5a-YN-DOA"/>
-                            <constraint firstItem="Gx4-DJ-cZa" firstAttribute="top" secondItem="qOB-4w-sog" secondAttribute="top" id="ejv-xw-82L"/>
                             <constraint firstItem="eCw-hw-4kQ" firstAttribute="top" secondItem="j6m-T4-2Yp" secondAttribute="bottom" constant="10" id="gf6-UE-Fd9"/>
                             <constraint firstItem="MvV-Dm-fB2" firstAttribute="trailing" secondItem="j6m-T4-2Yp" secondAttribute="trailing" id="jgU-N2-mws"/>
+                            <constraint firstItem="MvV-Dm-fB2" firstAttribute="trailing" secondItem="qOB-4w-sog" secondAttribute="trailing" constant="40" id="ofD-4i-PDu"/>
                             <constraint firstItem="MvV-Dm-fB2" firstAttribute="bottom" secondItem="eCw-hw-4kQ" secondAttribute="bottom" id="pdT-7j-BcA"/>
                             <constraint firstItem="qOB-4w-sog" firstAttribute="top" secondItem="MvV-Dm-fB2" secondAttribute="top" constant="40" id="tWq-gG-27F"/>
                             <constraint firstItem="eCw-hw-4kQ" firstAttribute="centerX" secondItem="MvV-Dm-fB2" secondAttribute="centerX" id="zCE-Za-2mt"/>
                             <constraint firstItem="eCw-hw-4kQ" firstAttribute="leading" secondItem="MvV-Dm-fB2" secondAttribute="leading" id="zMM-X1-sNl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="LCl-kz-nKq"/>
+                    <navigationItem key="navigationItem" id="LCl-kz-nKq">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="5tO-gW-rR3">
+                            <imageReference key="image" image="road.lanes.curved.left" catalog="system" symbolScale="medium"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="7KR-DC-I08">
+                            <imageReference key="image" image="car.2.fill" catalog="system" symbolScale="medium"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="car_image" destination="j6m-T4-2Yp" id="kMk-99-pYf"/>
                         <outlet property="car_name" destination="qOB-4w-sog" id="so7-5e-NqW"/>
                         <outlet property="car_vin" destination="fvs-tc-Srp" id="zzQ-PI-uVG"/>
-                        <outlet property="profile_image" destination="Gx4-DJ-cZa" id="d8Q-9X-uob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuc-si-ENu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2328.985507246377" y="125.89285714285714"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="AWx-FZ-50f">
+            <objects>
+                <viewController id="yPD-1A-hPr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jQw-fp-HVg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sqv-dO-Xe8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ef-Bg-Cp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3061" y="126"/>
+        </scene>
+        <!--Splashscreen Page-->
+        <scene sceneID="lqL-6L-0IC">
+            <objects>
+                <viewController storyboardIdentifier="splashscreentab" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F4J-XY-PmW" customClass="SplashscreenPage" customModule="Porsche_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ziT-wS-Fzn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O2E-II-wGL"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XwA-0H-S2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-547"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="alpay" width="1170" height="2080"/>
         <image name="boxster_gts" width="1920" height="1080"/>
+        <image name="car.2.fill" catalog="system" width="128" height="73"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
-        <image name="porsche_logo_home" width="995" height="270"/>
+        <image name="porsche_splash_logo_dark" width="800" height="402"/>
+        <image name="road.lanes.curved.left" catalog="system" width="128" height="74"/>
         <image name="temp_background" width="1278" height="2766"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -8,6 +8,10 @@ target 'Porsche Widget' do
   # Pods for Porsche Widget
   
   pod 'Kingfisher', '~> 7.0'
+  pod 'RevealingSplashView'
+  pod 'BulletinBoard'
+  pod "JGProgressHUD"
+  pod 'SkeletonView'
 
   target 'Porsche WidgetTests' do
     inherit! :search_paths
