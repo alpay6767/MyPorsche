@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA937DF0309AA2DB3E3097A /* Pods_Porsche_WidgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F729A4340A969A1288AB306 /* Pods_Porsche_WidgetTests.framework */; };
+		38DD394062F4DAE03E9A293F /* Pods_Porsche_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F8CD62D8BAC40507FEFDC /* Pods_Porsche_Widget.framework */; };
+		4A787D6228D7E74F00EF8EE9 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */; };
+		4A8E326B28DD024900A19B27 /* PorscheConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326128DD024800A19B27 /* PorscheConnect.swift */; };
+		4A8E326C28DD024900A19B27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326228DD024800A19B27 /* Constants.swift */; };
+		4A8E326D28DD024900A19B27 /* PorscheConnect+Portal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326328DD024900A19B27 /* PorscheConnect+Portal.swift */; };
+		4A8E326E28DD024900A19B27 /* NetworkRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326428DD024900A19B27 /* NetworkRoutes.swift */; };
+		4A8E326F28DD024900A19B27 /* PorscheConnect+CarControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326528DD024900A19B27 /* PorscheConnect+CarControl.swift */; };
+		4A8E327028DD024900A19B27 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326628DD024900A19B27 /* NetworkClient.swift */; };
+		4A8E327128DD024900A19B27 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326728DD024900A19B27 /* Extensions.swift */; };
+		4A8E327228DD024900A19B27 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326828DD024900A19B27 /* Models.swift */; };
+		4A8E327328DD024900A19B27 /* PorscheConnect+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326928DD024900A19B27 /* PorscheConnect+Auth.swift */; };
+		4A8E327428DD024900A19B27 /* CodeChallenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326A28DD024900A19B27 /* CodeChallenger.swift */; };
+		4A8E327628DD08D400A19B27 /* PorscheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327528DD08D400A19B27 /* PorscheManager.swift */; };
+		4A8E327828DD13AE00A19B27 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */; };
+		4A8E327A28DD13D500A19B27 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327928DD13D500A19B27 /* Home.swift */; };
 		4AE4AD2728D5C11A0055FEA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD2628D5C11A0055FEA8 /* AppDelegate.swift */; };
 		4AE4AD2928D5C11A0055FEA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD2828D5C11A0055FEA8 /* SceneDelegate.swift */; };
 		4AE4AD2B28D5C11A0055FEA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD2A28D5C11A0055FEA8 /* ViewController.swift */; };
@@ -16,6 +32,7 @@
 		4AE4AD3E28D5C11C0055FEA8 /* Porsche_WidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD3D28D5C11C0055FEA8 /* Porsche_WidgetTests.swift */; };
 		4AE4AD4828D5C11C0055FEA8 /* Porsche_WidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD4728D5C11C0055FEA8 /* Porsche_WidgetUITests.swift */; };
 		4AE4AD4A28D5C11C0055FEA8 /* Porsche_WidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4AD4928D5C11C0055FEA8 /* Porsche_WidgetUITestsLaunchTests.swift */; };
+		DC41B4E63BE3BDEFE8B808E7 /* Pods_Porsche_Widget_Porsche_WidgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7372DBAD0BF7F9B3232D5D11 /* Pods_Porsche_Widget_Porsche_WidgetUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AD3C6632A4651154FFBBB19 /* Pods-Porsche WidgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche WidgetTests.debug.xcconfig"; path = "Target Support Files/Pods-Porsche WidgetTests/Pods-Porsche WidgetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E58880D4EEF781B7DB21F74 /* Pods-Porsche Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche Widget.debug.xcconfig"; path = "Target Support Files/Pods-Porsche Widget/Pods-Porsche Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		4A8E326128DD024800A19B27 /* PorscheConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorscheConnect.swift; sourceTree = "<group>"; };
+		4A8E326228DD024800A19B27 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A8E326328DD024900A19B27 /* PorscheConnect+Portal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Portal.swift"; sourceTree = "<group>"; };
+		4A8E326428DD024900A19B27 /* NetworkRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRoutes.swift; sourceTree = "<group>"; };
+		4A8E326528DD024900A19B27 /* PorscheConnect+CarControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+CarControl.swift"; sourceTree = "<group>"; };
+		4A8E326628DD024900A19B27 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4A8E326728DD024900A19B27 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4A8E326828DD024900A19B27 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4A8E326928DD024900A19B27 /* PorscheConnect+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Auth.swift"; sourceTree = "<group>"; };
+		4A8E326A28DD024900A19B27 /* CodeChallenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeChallenger.swift; sourceTree = "<group>"; };
+		4A8E327528DD08D400A19B27 /* PorscheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorscheManager.swift; sourceTree = "<group>"; };
+		4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		4A8E327928DD13D500A19B27 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4AE4AD2328D5C11A0055FEA8 /* Porsche Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Porsche Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE4AD2628D5C11A0055FEA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE4AD2828D5C11A0055FEA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +82,13 @@
 		4AE4AD4328D5C11C0055FEA8 /* Porsche WidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Porsche WidgetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE4AD4728D5C11C0055FEA8 /* Porsche_WidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Porsche_WidgetUITests.swift; sourceTree = "<group>"; };
 		4AE4AD4928D5C11C0055FEA8 /* Porsche_WidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Porsche_WidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5992F7AF02EAB8E1E8D4A0C1 /* Pods-Porsche Widget-Porsche WidgetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche Widget-Porsche WidgetUITests.debug.xcconfig"; path = "Target Support Files/Pods-Porsche Widget-Porsche WidgetUITests/Pods-Porsche Widget-Porsche WidgetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F729A4340A969A1288AB306 /* Pods_Porsche_WidgetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Porsche_WidgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7372DBAD0BF7F9B3232D5D11 /* Pods_Porsche_Widget_Porsche_WidgetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Porsche_Widget_Porsche_WidgetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802F8CD62D8BAC40507FEFDC /* Pods_Porsche_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Porsche_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A60C55DDD3ABC8E8DE5A3C /* Pods-Porsche Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche Widget.release.xcconfig"; path = "Target Support Files/Pods-Porsche Widget/Pods-Porsche Widget.release.xcconfig"; sourceTree = "<group>"; };
+		DFD4B049DE4D4AB75695EDDB /* Pods-Porsche Widget-Porsche WidgetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche Widget-Porsche WidgetUITests.release.xcconfig"; path = "Target Support Files/Pods-Porsche Widget-Porsche WidgetUITests/Pods-Porsche Widget-Porsche WidgetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2F4E1BE1F739927372123E2 /* Pods-Porsche WidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche WidgetTests.release.xcconfig"; path = "Target Support Files/Pods-Porsche WidgetTests/Pods-Porsche WidgetTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DD394062F4DAE03E9A293F /* Pods_Porsche_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA937DF0309AA2DB3E3097A /* Pods_Porsche_WidgetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC41B4E63BE3BDEFE8B808E7 /* Pods_Porsche_Widget_Porsche_WidgetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +126,8 @@
 				4AE4AD3C28D5C11C0055FEA8 /* Porsche WidgetTests */,
 				4AE4AD4628D5C11C0055FEA8 /* Porsche WidgetUITests */,
 				4AE4AD2428D5C11A0055FEA8 /* Products */,
+				F266BCCCB559A0C68EA31BA5 /* Pods */,
+				BBDD2D708BE11154C03263C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +144,16 @@
 		4AE4AD2528D5C11A0055FEA8 /* Porsche Widget */ = {
 			isa = PBXGroup;
 			children = (
+				4A8E326A28DD024900A19B27 /* CodeChallenger.swift */,
+				4A8E326228DD024800A19B27 /* Constants.swift */,
+				4A8E326728DD024900A19B27 /* Extensions.swift */,
+				4A8E326828DD024900A19B27 /* Models.swift */,
+				4A8E326628DD024900A19B27 /* NetworkClient.swift */,
+				4A8E326428DD024900A19B27 /* NetworkRoutes.swift */,
+				4A8E326128DD024800A19B27 /* PorscheConnect.swift */,
+				4A8E326928DD024900A19B27 /* PorscheConnect+Auth.swift */,
+				4A8E326528DD024900A19B27 /* PorscheConnect+CarControl.swift */,
+				4A8E326328DD024900A19B27 /* PorscheConnect+Portal.swift */,
 				4AE4AD2628D5C11A0055FEA8 /* AppDelegate.swift */,
 				4AE4AD2828D5C11A0055FEA8 /* SceneDelegate.swift */,
 				4AE4AD2A28D5C11A0055FEA8 /* ViewController.swift */,
@@ -106,6 +161,10 @@
 				4AE4AD2F28D5C11C0055FEA8 /* Assets.xcassets */,
 				4AE4AD3128D5C11C0055FEA8 /* LaunchScreen.storyboard */,
 				4AE4AD3428D5C11C0055FEA8 /* Info.plist */,
+				4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */,
+				4A8E327528DD08D400A19B27 /* PorscheManager.swift */,
+				4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */,
+				4A8E327928DD13D500A19B27 /* Home.swift */,
 			);
 			path = "Porsche Widget";
 			sourceTree = "<group>";
@@ -127,6 +186,29 @@
 			path = "Porsche WidgetUITests";
 			sourceTree = "<group>";
 		};
+		BBDD2D708BE11154C03263C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				802F8CD62D8BAC40507FEFDC /* Pods_Porsche_Widget.framework */,
+				7372DBAD0BF7F9B3232D5D11 /* Pods_Porsche_Widget_Porsche_WidgetUITests.framework */,
+				5F729A4340A969A1288AB306 /* Pods_Porsche_WidgetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F266BCCCB559A0C68EA31BA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E58880D4EEF781B7DB21F74 /* Pods-Porsche Widget.debug.xcconfig */,
+				C8A60C55DDD3ABC8E8DE5A3C /* Pods-Porsche Widget.release.xcconfig */,
+				5992F7AF02EAB8E1E8D4A0C1 /* Pods-Porsche Widget-Porsche WidgetUITests.debug.xcconfig */,
+				DFD4B049DE4D4AB75695EDDB /* Pods-Porsche Widget-Porsche WidgetUITests.release.xcconfig */,
+				3AD3C6632A4651154FFBBB19 /* Pods-Porsche WidgetTests.debug.xcconfig */,
+				E2F4E1BE1F739927372123E2 /* Pods-Porsche WidgetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE4AD4D28D5C11C0055FEA8 /* Build configuration list for PBXNativeTarget "Porsche Widget" */;
 			buildPhases = (
+				04AEB39AAAB2DE8256EE566D /* [CP] Check Pods Manifest.lock */,
 				4AE4AD1F28D5C11A0055FEA8 /* Sources */,
 				4AE4AD2028D5C11A0055FEA8 /* Frameworks */,
 				4AE4AD2128D5C11A0055FEA8 /* Resources */,
+				EA11AEFE5DECFAACFC1E190B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE4AD5028D5C11C0055FEA8 /* Build configuration list for PBXNativeTarget "Porsche WidgetTests" */;
 			buildPhases = (
+				D3B58FE9B48A9BD614E2F9B3 /* [CP] Check Pods Manifest.lock */,
 				4AE4AD3528D5C11C0055FEA8 /* Sources */,
 				4AE4AD3628D5C11C0055FEA8 /* Frameworks */,
 				4AE4AD3728D5C11C0055FEA8 /* Resources */,
@@ -169,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE4AD5328D5C11C0055FEA8 /* Build configuration list for PBXNativeTarget "Porsche WidgetUITests" */;
 			buildPhases = (
+				7FB77D482C0720E722529377 /* [CP] Check Pods Manifest.lock */,
 				4AE4AD3F28D5C11C0055FEA8 /* Sources */,
 				4AE4AD4028D5C11C0055FEA8 /* Frameworks */,
 				4AE4AD4128D5C11C0055FEA8 /* Resources */,
+				AAA7D799F92C390133764C8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +340,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04AEB39AAAB2DE8256EE566D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Porsche Widget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB77D482C0720E722529377 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Porsche Widget-Porsche WidgetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA7D799F92C390133764C8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Porsche Widget-Porsche WidgetUITests/Pods-Porsche Widget-Porsche WidgetUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Porsche Widget-Porsche WidgetUITests/Pods-Porsche Widget-Porsche WidgetUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Porsche Widget-Porsche WidgetUITests/Pods-Porsche Widget-Porsche WidgetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B58FE9B48A9BD614E2F9B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Porsche WidgetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA11AEFE5DECFAACFC1E190B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Porsche Widget/Pods-Porsche Widget-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Porsche Widget/Pods-Porsche Widget-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Porsche Widget/Pods-Porsche Widget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AE4AD1F28D5C11A0055FEA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A787D6228D7E74F00EF8EE9 /* LoginPage.swift in Sources */,
+				4A8E327028DD024900A19B27 /* NetworkClient.swift in Sources */,
+				4A8E327628DD08D400A19B27 /* PorscheManager.swift in Sources */,
+				4A8E326B28DD024900A19B27 /* PorscheConnect.swift in Sources */,
+				4A8E327228DD024900A19B27 /* Models.swift in Sources */,
+				4A8E327328DD024900A19B27 /* PorscheConnect+Auth.swift in Sources */,
+				4A8E327A28DD13D500A19B27 /* Home.swift in Sources */,
+				4A8E327828DD13AE00A19B27 /* HomeNavigationController.swift in Sources */,
+				4A8E326E28DD024900A19B27 /* NetworkRoutes.swift in Sources */,
+				4A8E326F28DD024900A19B27 /* PorscheConnect+CarControl.swift in Sources */,
+				4A8E326D28DD024900A19B27 /* PorscheConnect+Portal.swift in Sources */,
 				4AE4AD2B28D5C11A0055FEA8 /* ViewController.swift in Sources */,
+				4A8E327428DD024900A19B27 /* CodeChallenger.swift in Sources */,
 				4AE4AD2728D5C11A0055FEA8 /* AppDelegate.swift in Sources */,
 				4AE4AD2928D5C11A0055FEA8 /* SceneDelegate.swift in Sources */,
+				4A8E327128DD024900A19B27 /* Extensions.swift in Sources */,
+				4A8E326C28DD024900A19B27 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,19 +636,23 @@
 		};
 		4AE4AD4E28D5C11C0055FEA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E58880D4EEF781B7DB21F74 /* Pods-Porsche Widget.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = porsche_app_icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CMCESWENEQ;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Porsche Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Porsche";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,24 +668,28 @@
 		};
 		4AE4AD4F28D5C11C0055FEA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A60C55DDD3ABC8E8DE5A3C /* Pods-Porsche Widget.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = porsche_app_icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CMCESWENEQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Porsche Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Porsche";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cyberfacility.Porsche-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -488,6 +700,7 @@
 		};
 		4AE4AD5128D5C11C0055FEA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD3C6632A4651154FFBBB19 /* Pods-Porsche WidgetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +721,7 @@
 		};
 		4AE4AD5228D5C11C0055FEA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F4E1BE1F739927372123E2 /* Pods-Porsche WidgetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +742,7 @@
 		};
 		4AE4AD5428D5C11C0055FEA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5992F7AF02EAB8E1E8D4A0C1 /* Pods-Porsche Widget-Porsche WidgetUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +761,7 @@
 		};
 		4AE4AD5528D5C11C0055FEA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD4B049DE4D4AB75695EDDB /* Pods-Porsche Widget-Porsche WidgetUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

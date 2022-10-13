@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "porsche-connect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/driven-app/porsche-connect.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "447606fee91f71d0b739f0bed73b34af5144aa5e"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "9f39744e025c7d377987f30b03770805dcb0bcd1",
+        "version" : "1.1.4"
+      }
+    }
+  ],
+  "version" : 2
+}
