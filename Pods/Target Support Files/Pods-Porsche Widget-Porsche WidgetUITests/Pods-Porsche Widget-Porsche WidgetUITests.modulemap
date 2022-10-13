@@ -1,0 +1,6 @@
+framework module Pods_Porsche_Widget_Porsche_WidgetUITests {
+  umbrella header "Pods-Porsche Widget-Porsche WidgetUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
