@@ -9,12 +9,19 @@ import Foundation
 import UIKit
 import SkeletonView
 import Kingfisher
+import WidgetKit
 
 class Home: UIViewController {
     
     @IBOutlet weak var car_name: UILabel!
     @IBOutlet weak var car_image: UIImageView!
     @IBOutlet weak var car_vin: UILabel!
+    @IBOutlet weak var lock_button: UIButton!
+    @IBOutlet weak var fan_button: UIButton!
+    @IBOutlet weak var emobility_button: UIButton!
+    @IBOutlet weak var quick_actios_view: UIStackView!
+    @IBOutlet weak var scrollView: UIView!
+    @IBOutlet weak var actions_container_view: UIView!
     public static var porscheManager = PorscheManager()
     
     var porscheConnect: PorscheConnect?
@@ -24,18 +31,29 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavBarImage()
+        
         car_name.showAnimatedGradientSkeleton(usingGradient: gradient, animation: animation)
         car_image.showAnimatedGradientSkeleton(usingGradient: gradient, animation: animation)
         car_vin.showAnimatedGradientSkeleton(usingGradient: gradient, animation: animation)
+        quick_actios_view.showAnimatedGradientSkeleton(usingGradient: gradient, animation: animation)
+        actions_container_view.showAnimatedGradientSkeleton(usingGradient: gradient, animation: animation)
         
         porscheConnect = PorscheConnect(username: (Home.porscheManager.currentUser?.email)!,
                                         password: (Home.porscheManager.currentUser?.password)!)
         
         Task {
             try await getVehicles()
+            try await getVehicleCapabilities()
         }
         
         
+    }
+    
+    func setAsWidget() {
+        let defaults = UserDefaults(suiteName: "group.myporsche")
+        defaults!.set(Home.porscheManager.vehicles![0].pictures![3].url, forKey: "selectedWidget")
+        defaults?.synchronize()
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
     func addNavBarImage() {
@@ -60,9 +78,22 @@ class Home: UIViewController {
                 car_name.text = "Porsche " + Home.porscheManager.vehicles![0].modelDescription
                 car_vin.text = Home.porscheManager.vehicles![0].vin
                 car_image.kf.setImage(with: Home.porscheManager.vehicles![0].pictures![0].url)
-                car_name.hideSkeleton()
-                car_image.hideSkeleton()
-                car_vin.hideSkeleton()
+                setAsWidget()
+                self.scrollView.hideSkeleton()
+                //self.view.hideSkeleton()
+          }
+        } catch{
+            print("Unexpected error: \(error).")
+        }
+    }
+    
+    func getVehicleCapabilities() async throws {
+        do {
+            let result = try await porscheConnect!.capabilities(vehicle: Home.porscheManager.vehicles![0])
+            if let capabilities = result.capabilities, let response = result.response {
+            // Do something with vehicles or raw response
+                Home.porscheManager.capabilities = capabilities
+                print(capabilities)
           }
         } catch{
             print("Unexpected error: \(error).")

@@ -144,7 +144,7 @@ public struct Position: Codable {
   
   // MARK: Properties
   
-  public let carCoordinate: CarCoordinate
+  public let carCoordinate: CarCoordinate?
   public let heading: CLLocationDirection
   
   // MARK: -
@@ -170,8 +170,8 @@ public struct Capabilities: Codable {
   public let hasRDK: Bool
   public let engineType: String
   public let carModel: String
-  public let onlineRemoteUpdateStatus: OnlineRemoteUpdateStatus
-  public let heatingCapabilities: HeatingCapabilities
+  public let onlineRemoteUpdateStatus: OnlineRemoteUpdateStatus?
+  public let heatingCapabilities: HeatingCapabilities?
   public let steeringWheelPosition: String
   public let hasHonkAndFlash: Bool
   
@@ -230,11 +230,11 @@ public struct Emobility: Codable {
   
   // MARK: Properties
   
-  public let batteryChargeStatus: BatteryChargeStatus
-  public let directCharge: DirectCharge
-  public let directClimatisation: DirectClimatisation
+  public let batteryChargeStatus: BatteryChargeStatus?
+  public let directCharge: DirectCharge?
+  public let directClimatisation: DirectClimatisation?
   public let chargingStatus: String
-  public let chargingProfiles: ChargingProfiles
+  public let chargingProfiles: ChargingProfiles?
   public let climateTimer: String? // TBD when set
   public let timers: [Timer]?
   
@@ -254,11 +254,11 @@ public struct Emobility: Codable {
     public let chargingMode: String
     public let stateOfChargeInPercentage: Int
     public let remainingChargeTimeUntil100PercentInMinutes: Int?
-    public let remainingERange: RemainingERange
+    public let remainingERange: RemainingERange?
     public let remainingCRange: String? // TBD while charging
     public let chargingTargetDateTime: String //2021-02-19T01:09
     public let status: String? // TBD while charging
-    public let chargeRate: ChargeRate
+    public let chargeRate: ChargeRate?
     public let chargingPower: Double
     public let chargingInDCMode: Bool
     
@@ -328,8 +328,8 @@ public struct Emobility: Codable {
     public let profileId: Int
     public let profileName: String
     public let profileActive: Bool
-    public let chargingOptions: ChargingOptions
-    public let position: Position
+    public let chargingOptions: ChargingOptions?
+    public let position: Position?
     
     // MARK: -
     
@@ -368,7 +368,7 @@ public struct Emobility: Codable {
     public let preferredChargingEndTime: String?
     public let frequency: String
     public let climatised: Bool
-    public let weekDays: Weekdays
+    public let weekDays: Weekdays?
     public let active: Bool
     public let chargeOption: Bool
     public let targetChargeLevel: Int
@@ -389,4 +389,8 @@ public struct Emobility: Codable {
       public let SATURDAY: Bool
     }
   }
+    public struct VehicleData: Codable {
+        
+        
+    }
 }

@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0CA937DF0309AA2DB3E3097A /* Pods_Porsche_WidgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F729A4340A969A1288AB306 /* Pods_Porsche_WidgetTests.framework */; };
 		38DD394062F4DAE03E9A293F /* Pods_Porsche_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F8CD62D8BAC40507FEFDC /* Pods_Porsche_Widget.framework */; };
+		4A16D6552913CF660058AB6A /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16D6542913CF660058AB6A /* WebViewPage.swift */; };
+		4A493E5F28FEE78B00EE0E35 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A493E5E28FEE78B00EE0E35 /* WidgetKit.framework */; };
+		4A493E6128FEE78B00EE0E35 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A493E6028FEE78B00EE0E35 /* SwiftUI.framework */; };
+		4A493E6428FEE78B00EE0E35 /* MyPorsche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A493E6328FEE78B00EE0E35 /* MyPorsche.swift */; };
+		4A493E6728FEE78C00EE0E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A493E6628FEE78C00EE0E35 /* Assets.xcassets */; };
+		4A493E6928FEE78C00EE0E35 /* MyPorsche.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4A493E6528FEE78B00EE0E35 /* MyPorsche.intentdefinition */; };
+		4A493E6A28FEE78C00EE0E35 /* MyPorsche.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4A493E6528FEE78B00EE0E35 /* MyPorsche.intentdefinition */; };
+		4A493E6D28FEE78C00EE0E35 /* MyPorscheExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4A493E5D28FEE78B00EE0E35 /* MyPorscheExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4A787D6228D7E74F00EF8EE9 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */; };
 		4A8E326B28DD024900A19B27 /* PorscheConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326128DD024800A19B27 /* PorscheConnect.swift */; };
 		4A8E326C28DD024900A19B27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326228DD024800A19B27 /* Constants.swift */; };
@@ -38,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4A493E6B28FEE78C00EE0E35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE4AD1B28D5C11A0055FEA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A493E5C28FEE78B00EE0E35;
+			remoteInfo = MyPorscheExtension;
+		};
 		4AE4AD3A28D5C11C0055FEA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4AE4AD1B28D5C11A0055FEA8 /* Project object */;
@@ -54,9 +69,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A493E6E28FEE78C00EE0E35 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A493E6D28FEE78C00EE0E35 /* MyPorscheExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3AD3C6632A4651154FFBBB19 /* Pods-Porsche WidgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche WidgetTests.debug.xcconfig"; path = "Target Support Files/Pods-Porsche WidgetTests/Pods-Porsche WidgetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E58880D4EEF781B7DB21F74 /* Pods-Porsche Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Porsche Widget.debug.xcconfig"; path = "Target Support Files/Pods-Porsche Widget/Pods-Porsche Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		4A16D6542913CF660058AB6A /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
+		4A24BA4E2901948F00A57060 /* Porsche Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Porsche Widget.entitlements"; sourceTree = "<group>"; };
+		4A24BA4F290194B800A57060 /* MyPorscheExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPorscheExtension.entitlements; sourceTree = "<group>"; };
+		4A493E5D28FEE78B00EE0E35 /* MyPorscheExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyPorscheExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A493E5E28FEE78B00EE0E35 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4A493E6028FEE78B00EE0E35 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4A493E6328FEE78B00EE0E35 /* MyPorsche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPorsche.swift; sourceTree = "<group>"; };
+		4A493E6528FEE78B00EE0E35 /* MyPorsche.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyPorsche.intentdefinition; sourceTree = "<group>"; };
+		4A493E6628FEE78C00EE0E35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A493E6828FEE78C00EE0E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		4A8E326128DD024800A19B27 /* PorscheConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorscheConnect.swift; sourceTree = "<group>"; };
 		4A8E326228DD024800A19B27 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -96,6 +135,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A493E5A28FEE78B00EE0E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A493E6128FEE78B00EE0E35 /* SwiftUI.framework in Frameworks */,
+				4A493E5F28FEE78B00EE0E35 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE4AD2028D5C11A0055FEA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,12 +171,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A493E6228FEE78B00EE0E35 /* MyPorsche */ = {
+			isa = PBXGroup;
+			children = (
+				4A493E6328FEE78B00EE0E35 /* MyPorsche.swift */,
+				4A493E6528FEE78B00EE0E35 /* MyPorsche.intentdefinition */,
+				4A493E6628FEE78C00EE0E35 /* Assets.xcassets */,
+				4A493E6828FEE78C00EE0E35 /* Info.plist */,
+			);
+			path = MyPorsche;
+			sourceTree = "<group>";
+		};
 		4AE4AD1A28D5C11A0055FEA8 = {
 			isa = PBXGroup;
 			children = (
+				4A24BA4F290194B800A57060 /* MyPorscheExtension.entitlements */,
 				4AE4AD2528D5C11A0055FEA8 /* Porsche Widget */,
 				4AE4AD3C28D5C11C0055FEA8 /* Porsche WidgetTests */,
 				4AE4AD4628D5C11C0055FEA8 /* Porsche WidgetUITests */,
+				4A493E6228FEE78B00EE0E35 /* MyPorsche */,
 				4AE4AD2428D5C11A0055FEA8 /* Products */,
 				F266BCCCB559A0C68EA31BA5 /* Pods */,
 				BBDD2D708BE11154C03263C3 /* Frameworks */,
@@ -141,6 +202,7 @@
 				4AE4AD2328D5C11A0055FEA8 /* Porsche Widget.app */,
 				4AE4AD3928D5C11C0055FEA8 /* Porsche WidgetTests.xctest */,
 				4AE4AD4328D5C11C0055FEA8 /* Porsche WidgetUITests.xctest */,
+				4A493E5D28FEE78B00EE0E35 /* MyPorscheExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +210,7 @@
 		4AE4AD2528D5C11A0055FEA8 /* Porsche Widget */ = {
 			isa = PBXGroup;
 			children = (
+				4A24BA4E2901948F00A57060 /* Porsche Widget.entitlements */,
 				4A8E326A28DD024900A19B27 /* CodeChallenger.swift */,
 				4A8E326228DD024800A19B27 /* Constants.swift */,
 				4A8E326728DD024900A19B27 /* Extensions.swift */,
@@ -171,6 +234,7 @@
 				4A8E327928DD13D500A19B27 /* Home.swift */,
 				4AA8127C28F8585600DB9718 /* SplashscreenPage.swift */,
 				4AA8127E28F85B1600DB9718 /* User.swift */,
+				4A16D6542913CF660058AB6A /* WebViewPage.swift */,
 			);
 			path = "Porsche Widget";
 			sourceTree = "<group>";
@@ -198,6 +262,8 @@
 				802F8CD62D8BAC40507FEFDC /* Pods_Porsche_Widget.framework */,
 				7372DBAD0BF7F9B3232D5D11 /* Pods_Porsche_Widget_Porsche_WidgetUITests.framework */,
 				5F729A4340A969A1288AB306 /* Pods_Porsche_WidgetTests.framework */,
+				4A493E5E28FEE78B00EE0E35 /* WidgetKit.framework */,
+				4A493E6028FEE78B00EE0E35 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +284,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A493E5C28FEE78B00EE0E35 /* MyPorscheExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A493E7128FEE78C00EE0E35 /* Build configuration list for PBXNativeTarget "MyPorscheExtension" */;
+			buildPhases = (
+				4A493E5928FEE78B00EE0E35 /* Sources */,
+				4A493E5A28FEE78B00EE0E35 /* Frameworks */,
+				4A493E5B28FEE78B00EE0E35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPorscheExtension;
+			productName = MyPorscheExtension;
+			productReference = 4A493E5D28FEE78B00EE0E35 /* MyPorscheExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4AE4AD2228D5C11A0055FEA8 /* Porsche Widget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE4AD4D28D5C11C0055FEA8 /* Build configuration list for PBXNativeTarget "Porsche Widget" */;
@@ -227,10 +310,12 @@
 				4AE4AD2028D5C11A0055FEA8 /* Frameworks */,
 				4AE4AD2128D5C11A0055FEA8 /* Resources */,
 				EA11AEFE5DECFAACFC1E190B /* [CP] Embed Pods Frameworks */,
+				4A493E6E28FEE78C00EE0E35 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4A493E6C28FEE78C00EE0E35 /* PBXTargetDependency */,
 			);
 			name = "Porsche Widget";
 			productName = "Porsche Widget";
@@ -283,9 +368,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					4A493E5C28FEE78B00EE0E35 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					4AE4AD2228D5C11A0055FEA8 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -315,11 +403,20 @@
 				4AE4AD2228D5C11A0055FEA8 /* Porsche Widget */,
 				4AE4AD3828D5C11C0055FEA8 /* Porsche WidgetTests */,
 				4AE4AD4228D5C11C0055FEA8 /* Porsche WidgetUITests */,
+				4A493E5C28FEE78B00EE0E35 /* MyPorscheExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4A493E5B28FEE78B00EE0E35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A493E6728FEE78C00EE0E35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE4AD2128D5C11A0055FEA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +547,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4A493E5928FEE78B00EE0E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A493E6428FEE78B00EE0E35 /* MyPorsche.swift in Sources */,
+				4A493E6928FEE78C00EE0E35 /* MyPorsche.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AE4AD1F28D5C11A0055FEA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,8 +573,10 @@
 				4A8E326F28DD024900A19B27 /* PorscheConnect+CarControl.swift in Sources */,
 				4A8E326D28DD024900A19B27 /* PorscheConnect+Portal.swift in Sources */,
 				4AE4AD2B28D5C11A0055FEA8 /* ViewController.swift in Sources */,
+				4A493E6A28FEE78C00EE0E35 /* MyPorsche.intentdefinition in Sources */,
 				4A8E327428DD024900A19B27 /* CodeChallenger.swift in Sources */,
 				4AE4AD2728D5C11A0055FEA8 /* AppDelegate.swift in Sources */,
+				4A16D6552913CF660058AB6A /* WebViewPage.swift in Sources */,
 				4AE4AD2928D5C11A0055FEA8 /* SceneDelegate.swift in Sources */,
 				4A8E327128DD024900A19B27 /* Extensions.swift in Sources */,
 				4A8E326C28DD024900A19B27 /* Constants.swift in Sources */,
@@ -496,6 +604,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4A493E6C28FEE78C00EE0E35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A493E5C28FEE78B00EE0E35 /* MyPorscheExtension */;
+			targetProxy = 4A493E6B28FEE78C00EE0E35 /* PBXContainerItemProxy */;
+		};
 		4AE4AD3B28D5C11C0055FEA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AE4AD2228D5C11A0055FEA8 /* Porsche Widget */;
@@ -528,6 +641,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4A493E6F28FEE78C00EE0E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = MyPorscheExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMCESWENEQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyPorsche/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyPorsche;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cyberfacility.Porsche-Widget.MyPorsche";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A493E7028FEE78C00EE0E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = MyPorscheExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMCESWENEQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyPorsche/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyPorsche;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cyberfacility.Porsche-Widget.MyPorsche";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4AE4AD4B28D5C11C0055FEA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -646,8 +819,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E58880D4EEF781B7DB21F74 /* Pods-Porsche Widget.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = porsche_app_icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Porsche Widget/Porsche Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CMCESWENEQ;
@@ -679,8 +854,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8A60C55DDD3ABC8E8DE5A3C /* Pods-Porsche Widget.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = porsche_app_icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Porsche Widget/Porsche Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CMCESWENEQ;
@@ -791,6 +968,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A493E7128FEE78C00EE0E35 /* Build configuration list for PBXNativeTarget "MyPorscheExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A493E6F28FEE78C00EE0E35 /* Debug */,
+				4A493E7028FEE78C00EE0E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4AE4AD1E28D5C11A0055FEA8 /* Build configuration list for PBXProject "Porsche Widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

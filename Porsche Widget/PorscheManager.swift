@@ -12,6 +12,7 @@ class PorscheManager {
     
     var selectedPorsche: Vehicle?
     var vehicles: [Vehicle]?
+    var capabilities: Capabilities?
     var currentUser: User?
     
     init() {
