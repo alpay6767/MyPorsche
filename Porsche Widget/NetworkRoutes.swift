@@ -4,89 +4,194 @@ import Foundation
 
 struct NetworkRoutes {
   let environment: Environment
-  
+
   // MARK: - Calculated properties
-  
-  var loginAuthURL: URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://login.porsche.com/auth/api/v1/\(environment.regionCode)/public/login")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/auth/api/v1/\(environment.regionCode)/public/login")!
-    }
+
+  var loginAuth0URL: URL {
+    return URL(
+      string:
+        "\(host("https://identity.porsche.com"))/authorize?response_type=code&client_id=\(OAuthApplication.api.clientId)&code_challenge_method=S256&redirect_uri=https://my.porsche.com&uri_locales=de-DE&audience=https://api.porsche.com&scope=openid")!
   }
   
-  var apiAuthURL: URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://login.porsche.com/as/authorization.oauth2")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/as/authorization.oauth2")!
-    }
+  var resumeAuth0URL: URL { // this is only used in test environment
+    return URL(
+      string:
+        "\(host("https://identity.porsche.com"))/testing-second-authorize?response_type=code&client_id=\(OAuthApplication.api.clientId)&code_challenge_method=S256&redirect_uri=https://my.porsche.com&uri_locales=de-DE&audience=https://api.porsche.com&scope=openid")!
   }
   
-  var apiTokenURL: URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://login.porsche.com/as/token.oauth2")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/as/token.oauth2")!
-    }
+  var accessTokenAuth0URL: URL {
+    return URL(
+      string:
+        "\(host("https://identity.porsche.com"))/oauth/token")!
   }
   
+  var usernamePasswordLoginAuth0URL: URL {
+    return URL(
+      string:
+        "\(host("https://identity.porsche.com"))/usernamepassword/login")!
+  }
+  
+  var callbackAuth0URL: URL {
+    return URL(
+      string:
+        "\(host("https://identity.porsche.com"))/login/callback")!
+  }
+
   var vehiclesURL: URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://api.porsche.com/core/api/v3/\(environment.regionCode)/vehicles")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/core/api/v3/\(environment.regionCode)/vehicles")!
-    }
+    return URL(
+      string: "\(host("https://api.porsche.com"))/core/api/v3/\(environment.regionCode)/vehicles")!
   }
-  
+
   // MARK: - Functions
-  
-  func vehicleSummaryURL(vehicle: Vehicle) -> URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://api.porsche.com/service-vehicle/vehicle-summary/\(vehicle.vin)")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/service-vehicle/vehicle-summary/\(vehicle.vin)")!
-    }
+
+  func vehicleSummaryURL(vin: String) -> URL {
+    return URL(
+      string: "\(host("https://api.porsche.com"))/service-vehicle/vehicle-summary/\(vin)")!
+  }
+
+  func vehiclePicturesURL(vin: String) -> URL {
+    return URL(
+      string: "\(host("https://api.porsche.com"))/vehicles/v2/\(environment.countryCode)/\(vin)/pictures")!
+  }
+
+  func vehiclePositionURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/car-finder/\(vin)/position")!
+  }
+
+  func vehicleCapabilitiesURL(vin: String) -> URL {
+    return URL(
+      string: "\(host("https://api.porsche.com"))/service-vehicle/vcs/capabilities/\(vin)")!
+  }
+
+  func vehicleStatusURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/vehicle-data/\(environment.regionCode)/status/\(vin)"
+    )!
+  }
+
+  func vehicleStoredURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/\(environment.regionCode)/vehicle-data/\(vin)/stored"
+    )!
+  }
+
+  func vehicleEmobilityURL(vin: String, capabilities: Capabilities? = nil) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/e-mobility/\(environment.regionCode)/\(capabilities?.carModel ?? kDefaultCarModel)/\(vin)?timezone=Europe/Dublin"
+    )!
+  }
+
+  func vehicleFlashURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/honk-and-flash/\(vin)/flash")!
+  }
+
+  func vehicleHonkAndFlashURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/honk-and-flash/\(vin)/honk-and-flash"
+    )!
+  }
+
+  func vehicleHonkAndFlashRemoteCommandStatusURL(
+    vin: String, remoteCommand: RemoteCommandAccepted
+  ) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/honk-and-flash/\(vin)/\(remoteCommand.identifier!)/status"
+    )!
+  }
+
+  func vehicleToggleDirectChargingURL(
+    vin: String, capabilities: Capabilities? = nil, enable: Bool
+  ) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/e-mobility/\(environment.regionCode)/\(capabilities?.carModel ?? kDefaultCarModel)/\(vin)/toggle-direct-charging/\(enable)"
+    )!
+  }
+
+  func vehicleToggleDirectChargingRemoteCommandStatusURL(
+    vin: String, capabilities: Capabilities? = nil, remoteCommand: RemoteCommandAccepted
+  ) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/e-mobility/\(environment.regionCode)/\(capabilities?.carModel ?? kDefaultCarModel)/\(vin)/toggle-direct-charging/status/\(remoteCommand.identifier!)"
+    )!
+  }
+
+  func vehicleToggleDirectClimatisationURL(vin: String, enable: Bool) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/e-mobility/\(environment.regionCode)/\(vin)/toggle-direct-climatisation/\(enable ? "true" : "false")"
+    )!
+  }
+
+  func vehicleToggleDirectClimatisationRemoteCommandStatusURL(
+    vin: String, remoteCommand: RemoteCommandAccepted
+  ) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/e-mobility/\(environment.regionCode)/\(vin)/toggle-direct-climatisation/status/\(remoteCommand.identifier!)"
+    )!
+  }
+
+  func vehicleLockUnlockURL(vin: String, lock: Bool) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/remote-lock-unlock/\(vin)/\(lock ? "quick-lock" : "security-pin/unlock")"
+    )!
+  }
+
+  func vehicleLockUnlockLastActionsURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/remote-lock-unlock/\(vin)/last-actions"
+    )!
+  }
+
+  func vehicleLockUnlockRemoteCommandStatusURL(
+    vin: String, remoteCommand: RemoteCommandAccepted
+  ) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/remote-lock-unlock/\(vin)/\(remoteCommand.identifier!)/status"
+    )!
   }
   
-  func vehiclePositionURL(vehicle: Vehicle) -> URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://api.porsche.com/service-vehicle/car-finder/\(vehicle.vin)/position")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/service-vehicle/car-finder/\(vehicle.vin)/position")!
-    }
+  func vehicleShortTermTripsURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/\(environment.regionCode)/trips/\(vin)/SHORT_TERM"
+    )!
   }
   
-  func vehicleCapabilitiesURL(vehicle: Vehicle) -> URL {
-    switch environment { 
-    case .Ireland, .Germany:
-      return URL(string: "https://api.porsche.com/service-vehicle/vcs/capabilities/\(vehicle.vin)")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/service-vehicle/vcs/capabilities/\(vehicle.vin)")!
-    }
+  func vehicleLongTermTripsURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/service-vehicle/\(environment.regionCode)/trips/\(vin)/LONG_TERM"
+    )!
   }
   
-  func vehicleEmobilityURL(vehicle: Vehicle, capabilities: Capabilities ) -> URL {
-    switch environment {
-    case .Ireland, .Germany:
-      return URL(string: "https://api.porsche.com/service-vehicle/\(environment.regionCode)/e-mobility/\(capabilities.carModel)/\(vehicle.vin)?timezone=Europe/Dublin")!
-    case .Test:
-      return URL(string: "http://localhost:\(kTestServerPort)/service-vehicle/\(environment.regionCode)/e-mobility/\(capabilities.carModel)/\(vehicle.vin)?timezone=Europe/Dublin")!
-    }
+  func vehicleMaintenanceURL(vin: String) -> URL {
+    return URL(
+      string:
+        "\(host("https://api.porsche.com"))/predictive-maintenance/information/\(vin)"
+    )!
   }
-    
-    func vehicleData(vehicle: Vehicle) -> URL {
-        switch environment {
-        case .Ireland, .Germany:
-          return URL(string: "https://api.porsche.com/service-vehicle/\(environment.regionCode)/vehicle-data/\(vehicle.vin)/stored")!
-        case .Test:
-          return URL(string: "http://localhost:\(kTestServerPort)/core/api/v3/\(environment.regionCode)/vehicles")!
-        }
+  
+  // MARK: - Private
+
+  private func host(_ defaultHost: String) -> String {
+    if environment == Environment.test {
+      return "http://localhost:\(kTestServerPort)"
     }
+    return defaultHost
+  }
 }

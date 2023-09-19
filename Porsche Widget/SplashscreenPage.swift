@@ -16,9 +16,9 @@ class SplashscreenPage: UIViewController {
         super.viewDidLoad()
         
         //Initialize a revealing Splash with with the iconImage, the initial size and the background color
-        /*let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "porsche_splash_logo_dark")!, iconInitialSize: CGSize(width: 167, height: 84), backgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))*/
+        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "porsche_splash_logo_dark")!, iconInitialSize: CGSize(width: 167, height: 84), backgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         
-        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "porsche_splash_logo_dark")!, iconInitialSize: CGSize(width: 0, height: 0), backgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0))
+        //let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "porsche_splash_logo_dark")!, iconInitialSize: CGSize(width: 40, height: 50), backgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0))
 
         //revealingSplashView.heartAttack = true
        

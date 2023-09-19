@@ -47,10 +47,9 @@ class LoginPage: UIViewController {
     }
     
     func executeLogin() async throws {
-        let application: Application = .Portal
         
         do {
-            try await porscheConnect!.authIfRequired(application: application)
+            //try await porscheConnect!.authIfRequired(application: application)
             AppDelegate.saveUserInDefaults(currentUser: (Home.porscheManager.currentUser!))
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "homenavigationcontroller")
@@ -66,7 +65,7 @@ class LoginPage: UIViewController {
     func getVehicles() async throws{
         do {
             let result = try await porscheConnect!.vehicles()
-            if let vehicles = result.vehicles, let response = result.response {
+            if let vehicles = result.vehicles {
             // Do something with vehicles or raw response
                 Home.porscheManager.vehicles = vehicles
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)

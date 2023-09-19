@@ -4,6 +4,7 @@ PODS:
   - Kingfisher (7.3.0)
   - RevealingSplashView (0.6.0)
   - SkeletonView (1.30.3)
+  - SwiftSoup (2.6.1)
 
 DEPENDENCIES:
   - BulletinBoard
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Kingfisher (~> 7.0)
   - RevealingSplashView
   - SkeletonView
+  - SwiftSoup
 
 SPEC REPOS:
   trunk:
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Kingfisher
     - RevealingSplashView
     - SkeletonView
+    - SwiftSoup
 
 SPEC CHECKSUMS:
   BulletinBoard: dba77053c2a7b64953f63073f7534165af2edd21
@@ -26,7 +29,8 @@ SPEC CHECKSUMS:
   Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
   SkeletonView: f5b099c708e42a278079a12bcaaf71c303be65a3
+  SwiftSoup: 5dd2c1b06afc964f30d99894af6ede22ede627aa
 
-PODFILE CHECKSUM: 83a075e1d238e621fb41eb16aa2448e858403630
+PODFILE CHECKSUM: 5eb8e061c0d7db9436a7f1d4f5c8cad4cfd40556
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

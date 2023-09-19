@@ -2,114 +2,108 @@ import Foundation
 
 // MARK: - Enums
 
-public enum Environment: String {
-  case Ireland, Germany, Test
-  
-  public var countryCode: String {
-    switch self {
-    case .Ireland:
-      return "ie"
-    case .Germany:
-      return "de"
-    case .Test:
-      return "ie"
-    }
-  }
-  
-  public var languageCode: String {
-    switch self {
-    case .Ireland:
-      return "en"
-    case .Germany:
-      return "de"
-    case .Test:
-      return "en"
-    }
-  }
-  
-  public var regionCode: String {
-    switch self {
-    case .Ireland:
-      return "ie/en_GB"
-    case .Germany:
-      return "de/de_DE"
-    case .Test:
-      return "ie/en_IE"
-    }
-  }
-}
-
-public enum Application {
-  case Portal, CarControl
-  
-  public var clientId: String {
-    switch self {
-    case .Portal:
-      return "4mPO3OE5Srjb1iaUGWsbqKBvvesya8oA"
-    case .CarControl:
-      return "Ux8WmyzsOAGGmvmWnW7GLEjIILHEztAs"
-    }
-  }
-  
-  public var redirectURL: URL {
-    switch self {
-    case .Portal:
-      return URL(string: "https://my.porsche.com/core/de/de_DE/")!
-    case .CarControl:
-      return URL(string: "https://my.porsche.com/myservices/auth/auth.html")!
-    }
-  }
-}
-
 public enum PorscheConnectError: Error {
   case AuthFailure
   case NoResult
+  case UnlockChallengeFailure
+  case lockedFor60Minutes
+  case IncorrectPin
 }
 
+// MARK: - Porsche-specific OAuth applications
+
+extension OAuthApplication {
+  public static let api = OAuthApplication(
+    clientId: "UYsK00My6bCqJdbQhTQ0PbWmcSdIAMig",
+    redirectURL: URL(string: "https://my.porsche.com/")!
+  )
+}
+
+final class SimpleAuthStorage: AuthStoring {
+  public var auths: [String: OAuthToken] = [:]
+
+  func storeAuthentication(token: OAuthToken?, for key: String) {
+    auths[key] = token
+  }
+
+  func authentication(for key: String) -> OAuthToken? {
+    return auths[key]
+  }
+}
 
 // MARK: - Porsche Connect
 
 public class PorscheConnect {
-  
+
   let environment: Environment
   let username: String
-  var auths: Dictionary<Application, PorscheAuth> = Dictionary()
-  
+  var authStorage: AuthStoring
+
   let networkClient = NetworkClient()
   let networkRoutes: NetworkRoutes
   let password: String
-  let codeChallenger = CodeChallenger(length: 40)
-  
+
   // MARK: - Init & configuration
-  
-  public init(username: String, password: String, environment: Environment = .Germany) {
+
+  public init(
+    username: String,
+    password: String,
+    environment: Environment = .germany,
+    authStorage: AuthStoring
+  ) {
     self.username = username
     self.password = password
     self.environment = environment
     self.networkRoutes = NetworkRoutes(environment: environment)
+    self.authStorage = authStorage
   }
-  
+
+  convenience public init(
+    username: String,
+    password: String,
+    environment: Environment = .germany
+  ) {
+    self.init(
+      username: username,
+      password: password,
+      environment: environment,
+      authStorage: SimpleAuthStorage()
+    )
+  }
+
   // MARK: - Common functions
-  
-  func authorized(application: Application) -> Bool {
-    guard let auth = auths[application] else {
+
+  func authorized(application: OAuthApplication) async -> Bool {
+    guard let auth = await authStorage.authentication(for: application.clientId) else {
       return false
     }
 
     return !auth.expired
   }
-  
-  func buildHeaders(accessToken: String, apiKey: String, countryCode: String, languageCode: String) -> Dictionary<String, String> {
-    return ["Authorization": "Bearer \(accessToken)",
-            "apikey": apiKey,
-            "x-vrs-url-country": countryCode,
-            "x-vrs-url-language": "\(languageCode)_\(countryCode.uppercased())"]
+
+// MARK: – Internal functions
+
+  internal func performAuthFor(application: OAuthApplication) async throws -> [String: String] {
+    _ = try await authIfRequired(application: application)
+
+    guard let auth = await authStorage.authentication(for: application.clientId), let apiKey = auth.apiKey else {
+      throw PorscheConnectError.AuthFailure
+    }
+
+    return [
+      "Authorization": "Bearer \(auth.accessToken)",
+      "apikey": apiKey,
+      "x-vrs-url-country": environment.countryCode,
+      "x-vrs-url-language": "\(environment.languageCode)_\(environment.countryCode.uppercased())",
+    ]
   }
-  
-  func authIfRequired(application: Application) async throws {
-    if !authorized(application: application) {
+
+  // MARK: - Private functions
+
+  private func authIfRequired(application: OAuthApplication) async throws {
+    if await !authorized(application: application) {
       do {
-      _ = try await auth(application: application)
+        _ = try await auth(application: application)
       } catch {
         throw PorscheConnectError.AuthFailure
       }

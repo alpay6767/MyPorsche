@@ -43,7 +43,6 @@ class Home: UIViewController {
         
         Task {
             try await getVehicles()
-            try await getVehicleCapabilities()
         }
         
         
@@ -74,7 +73,7 @@ class Home: UIViewController {
     func getVehicles() async throws {
         do {
             let result = try await porscheConnect!.vehicles()
-            if let vehicles = result.vehicles, let response = result.response {
+            if let vehicles = result.vehicles {
             // Do something with vehicles or raw response
                 Home.porscheManager.vehicles = vehicles
                 car_name.text = "Porsche " + Home.porscheManager.vehicles![0].modelDescription
@@ -91,16 +90,4 @@ class Home: UIViewController {
         }
     }
     
-    func getVehicleCapabilities() async throws {
-        do {
-            let result = try await porscheConnect!.capabilities(vehicle: Home.porscheManager.vehicles![0])
-            if let capabilities = result.capabilities, let response = result.response {
-            // Do something with vehicles or raw response
-                Home.porscheManager.capabilities = capabilities
-                print(capabilities)
-          }
-        } catch{
-            print("Unexpected error: \(error).")
-        }
-    }
 }

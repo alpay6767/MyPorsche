@@ -12,6 +12,7 @@ target 'Porsche Widget' do
   pod 'BulletinBoard'
   pod "JGProgressHUD"
   pod 'SkeletonView'
+  pod 'SwiftSoup'
 
   target 'Porsche WidgetTests' do
     inherit! :search_paths

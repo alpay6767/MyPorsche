@@ -10,6 +10,51 @@
 		0CA937DF0309AA2DB3E3097A /* Pods_Porsche_WidgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F729A4340A969A1288AB306 /* Pods_Porsche_WidgetTests.framework */; };
 		38DD394062F4DAE03E9A293F /* Pods_Porsche_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802F8CD62D8BAC40507FEFDC /* Pods_Porsche_Widget.framework */; };
 		4A16D6552913CF660058AB6A /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16D6542913CF660058AB6A /* WebViewPage.swift */; };
+		4A2C47BA2ABA26C900451B2B /* OAuthApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47832ABA26C900451B2B /* OAuthApplication.swift */; };
+		4A2C47BB2ABA26C900451B2B /* AuthStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47842ABA26C900451B2B /* AuthStoring.swift */; };
+		4A2C47BC2ABA26C900451B2B /* URL+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47862ABA26C900451B2B /* URL+Params.swift */; };
+		4A2C47BD2ABA26C900451B2B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47872ABA26C900451B2B /* Color+Hex.swift */; };
+		4A2C47BE2ABA26C900451B2B /* String+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47882ABA26C900451B2B /* String+Hex.swift */; };
+		4A2C47BF2ABA26C900451B2B /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C478A2ABA26C900451B2B /* HttpStatusCode.swift */; };
+		4A2C47C02ABA26C900451B2B /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C478C2ABA26C900451B2B /* Picture.swift */; };
+		4A2C47C12ABA26C900451B2B /* RemainingRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C478D2ABA26C900451B2B /* RemainingRanges.swift */; };
+		4A2C47C22ABA26C900451B2B /* GenericValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C478E2ABA26C900451B2B /* GenericValue.swift */; };
+		4A2C47C32ABA26C900451B2B /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C478F2ABA26C900451B2B /* Distance.swift */; };
+		4A2C47C42ABA26C900451B2B /* ServiceIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47902ABA26C900451B2B /* ServiceIntervals.swift */; };
+		4A2C47C52ABA26C900451B2B /* FuelConsumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47912ABA26C900451B2B /* FuelConsumption.swift */; };
+		4A2C47C62ABA26C900451B2B /* Tires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47922ABA26C900451B2B /* Tires.swift */; };
+		4A2C47C72ABA26C900451B2B /* Doors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47932ABA26C900451B2B /* Doors.swift */; };
+		4A2C47C82ABA26C900451B2B /* Pressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47942ABA26C900451B2B /* Pressure.swift */; };
+		4A2C47C92ABA26C900451B2B /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47952ABA26C900451B2B /* Speed.swift */; };
+		4A2C47CA2ABA26C900451B2B /* ElectricEngineConsumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47962ABA26C900451B2B /* ElectricEngineConsumption.swift */; };
+		4A2C47CB2ABA26C900451B2B /* Windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47972ABA26C900451B2B /* Windows.swift */; };
+		4A2C47CC2ABA26C900451B2B /* GenericValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47992ABA26C900451B2B /* GenericValueFormatter.swift */; };
+		4A2C47CD2ABA26C900451B2B /* TimestampFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C479A2ABA26C900451B2B /* TimestampFormatter.swift */; };
+		4A2C47CE2ABA26C900451B2B /* DistanceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C479B2ABA26C900451B2B /* DistanceFormatter.swift */; };
+		4A2C47CF2ABA26C900451B2B /* NetworkRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C479C2ABA26C900451B2B /* NetworkRoutes.swift */; };
+		4A2C47D02ABA26C900451B2B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C479D2ABA26C900451B2B /* NetworkClient.swift */; };
+		4A2C47D12ABA26C900451B2B /* PorscheConnect+Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C479F2ABA26C900451B2B /* PorscheConnect+Trips.swift */; };
+		4A2C47D22ABA26C900451B2B /* PorscheConnect+Emobility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A02ABA26C900451B2B /* PorscheConnect+Emobility.swift */; };
+		4A2C47D32ABA26C900451B2B /* PorscheConnect+Maintenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A12ABA26C900451B2B /* PorscheConnect+Maintenance.swift */; };
+		4A2C47D42ABA26C900451B2B /* PorscheConnect+Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A22ABA26C900451B2B /* PorscheConnect+Vehicles.swift */; };
+		4A2C47D52ABA26C900451B2B /* PorscheConnect+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A32ABA26C900451B2B /* PorscheConnect+Status.swift */; };
+		4A2C47D62ABA26C900451B2B /* PorscheConnect+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A42ABA26C900451B2B /* PorscheConnect+Position.swift */; };
+		4A2C47D72ABA26C900451B2B /* PorscheConnect+Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A52ABA26C900451B2B /* PorscheConnect+Summary.swift */; };
+		4A2C47D82ABA26C900451B2B /* RemoteCommandAccepted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A72ABA26C900451B2B /* RemoteCommandAccepted.swift */; };
+		4A2C47D92ABA26C900451B2B /* PorscheConnect+RemoteCommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47A82ABA26C900451B2B /* PorscheConnect+RemoteCommandStatus.swift */; };
+		4A2C47DA2ABA26C900451B2B /* PorscheConnect+Flash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47AA2ABA26C900451B2B /* PorscheConnect+Flash.swift */; };
+		4A2C47DB2ABA26C900451B2B /* PorscheConnect+LockUnlockLastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47AC2ABA26C900451B2B /* PorscheConnect+LockUnlockLastActions.swift */; };
+		4A2C47DC2ABA26C900451B2B /* PorscheConnect+Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47AD2ABA26C900451B2B /* PorscheConnect+Lock.swift */; };
+		4A2C47DD2ABA26C900451B2B /* PorscheConnect+Unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47AE2ABA26C900451B2B /* PorscheConnect+Unlock.swift */; };
+		4A2C47DE2ABA26C900451B2B /* PorscheConnect+ToggleDirectCharging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B02ABA26C900451B2B /* PorscheConnect+ToggleDirectCharging.swift */; };
+		4A2C47DF2ABA26C900451B2B /* PorscheConnect+ToggleDirectClimatisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B22ABA26C900451B2B /* PorscheConnect+ToggleDirectClimatisation.swift */; };
+		4A2C47E02ABA26C900451B2B /* PorscheConnect+Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B32ABA26C900451B2B /* PorscheConnect+Stored.swift */; };
+		4A2C47E12ABA26C900451B2B /* PorscheConnect+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B42ABA26C900451B2B /* PorscheConnect+Auth.swift */; };
+		4A2C47E22ABA26C900451B2B /* PorscheConnect+Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B52ABA26C900451B2B /* PorscheConnect+Pictures.swift */; };
+		4A2C47E32ABA26C900451B2B /* PorscheConnect+Capabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B62ABA26C900451B2B /* PorscheConnect+Capabilities.swift */; };
+		4A2C47E42ABA26C900451B2B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B72ABA26C900451B2B /* Environment.swift */; };
+		4A2C47E52ABA26C900451B2B /* PorscheConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B82ABA26C900451B2B /* PorscheConnect.swift */; };
+		4A2C47E62ABA26C900451B2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C47B92ABA26C900451B2B /* Constants.swift */; };
 		4A493E5F28FEE78B00EE0E35 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A493E5E28FEE78B00EE0E35 /* WidgetKit.framework */; };
 		4A493E6128FEE78B00EE0E35 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A493E6028FEE78B00EE0E35 /* SwiftUI.framework */; };
 		4A493E6428FEE78B00EE0E35 /* MyPorsche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A493E6328FEE78B00EE0E35 /* MyPorsche.swift */; };
@@ -18,16 +63,6 @@
 		4A493E6A28FEE78C00EE0E35 /* MyPorsche.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4A493E6528FEE78B00EE0E35 /* MyPorsche.intentdefinition */; };
 		4A493E6D28FEE78C00EE0E35 /* MyPorscheExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4A493E5D28FEE78B00EE0E35 /* MyPorscheExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4A787D6228D7E74F00EF8EE9 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */; };
-		4A8E326B28DD024900A19B27 /* PorscheConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326128DD024800A19B27 /* PorscheConnect.swift */; };
-		4A8E326C28DD024900A19B27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326228DD024800A19B27 /* Constants.swift */; };
-		4A8E326D28DD024900A19B27 /* PorscheConnect+Portal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326328DD024900A19B27 /* PorscheConnect+Portal.swift */; };
-		4A8E326E28DD024900A19B27 /* NetworkRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326428DD024900A19B27 /* NetworkRoutes.swift */; };
-		4A8E326F28DD024900A19B27 /* PorscheConnect+CarControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326528DD024900A19B27 /* PorscheConnect+CarControl.swift */; };
-		4A8E327028DD024900A19B27 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326628DD024900A19B27 /* NetworkClient.swift */; };
-		4A8E327128DD024900A19B27 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326728DD024900A19B27 /* Extensions.swift */; };
-		4A8E327228DD024900A19B27 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326828DD024900A19B27 /* Models.swift */; };
-		4A8E327328DD024900A19B27 /* PorscheConnect+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326928DD024900A19B27 /* PorscheConnect+Auth.swift */; };
-		4A8E327428DD024900A19B27 /* CodeChallenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E326A28DD024900A19B27 /* CodeChallenger.swift */; };
 		4A8E327628DD08D400A19B27 /* PorscheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327528DD08D400A19B27 /* PorscheManager.swift */; };
 		4A8E327828DD13AE00A19B27 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */; };
 		4A8E327A28DD13D500A19B27 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E327928DD13D500A19B27 /* Home.swift */; };
@@ -89,6 +124,51 @@
 		4A16D6542913CF660058AB6A /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		4A24BA4E2901948F00A57060 /* Porsche Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Porsche Widget.entitlements"; sourceTree = "<group>"; };
 		4A24BA4F290194B800A57060 /* MyPorscheExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPorscheExtension.entitlements; sourceTree = "<group>"; };
+		4A2C47832ABA26C900451B2B /* OAuthApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthApplication.swift; sourceTree = "<group>"; };
+		4A2C47842ABA26C900451B2B /* AuthStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthStoring.swift; sourceTree = "<group>"; };
+		4A2C47862ABA26C900451B2B /* URL+Params.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Params.swift"; sourceTree = "<group>"; };
+		4A2C47872ABA26C900451B2B /* Color+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		4A2C47882ABA26C900451B2B /* String+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hex.swift"; sourceTree = "<group>"; };
+		4A2C478A2ABA26C900451B2B /* HttpStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
+		4A2C478C2ABA26C900451B2B /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		4A2C478D2ABA26C900451B2B /* RemainingRanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemainingRanges.swift; sourceTree = "<group>"; };
+		4A2C478E2ABA26C900451B2B /* GenericValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericValue.swift; sourceTree = "<group>"; };
+		4A2C478F2ABA26C900451B2B /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		4A2C47902ABA26C900451B2B /* ServiceIntervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceIntervals.swift; sourceTree = "<group>"; };
+		4A2C47912ABA26C900451B2B /* FuelConsumption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelConsumption.swift; sourceTree = "<group>"; };
+		4A2C47922ABA26C900451B2B /* Tires.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tires.swift; sourceTree = "<group>"; };
+		4A2C47932ABA26C900451B2B /* Doors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doors.swift; sourceTree = "<group>"; };
+		4A2C47942ABA26C900451B2B /* Pressure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pressure.swift; sourceTree = "<group>"; };
+		4A2C47952ABA26C900451B2B /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		4A2C47962ABA26C900451B2B /* ElectricEngineConsumption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricEngineConsumption.swift; sourceTree = "<group>"; };
+		4A2C47972ABA26C900451B2B /* Windows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Windows.swift; sourceTree = "<group>"; };
+		4A2C47992ABA26C900451B2B /* GenericValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericValueFormatter.swift; sourceTree = "<group>"; };
+		4A2C479A2ABA26C900451B2B /* TimestampFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampFormatter.swift; sourceTree = "<group>"; };
+		4A2C479B2ABA26C900451B2B /* DistanceFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceFormatter.swift; sourceTree = "<group>"; };
+		4A2C479C2ABA26C900451B2B /* NetworkRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRoutes.swift; sourceTree = "<group>"; };
+		4A2C479D2ABA26C900451B2B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4A2C479F2ABA26C900451B2B /* PorscheConnect+Trips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Trips.swift"; sourceTree = "<group>"; };
+		4A2C47A02ABA26C900451B2B /* PorscheConnect+Emobility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Emobility.swift"; sourceTree = "<group>"; };
+		4A2C47A12ABA26C900451B2B /* PorscheConnect+Maintenance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Maintenance.swift"; sourceTree = "<group>"; };
+		4A2C47A22ABA26C900451B2B /* PorscheConnect+Vehicles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Vehicles.swift"; sourceTree = "<group>"; };
+		4A2C47A32ABA26C900451B2B /* PorscheConnect+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Status.swift"; sourceTree = "<group>"; };
+		4A2C47A42ABA26C900451B2B /* PorscheConnect+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Position.swift"; sourceTree = "<group>"; };
+		4A2C47A52ABA26C900451B2B /* PorscheConnect+Summary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Summary.swift"; sourceTree = "<group>"; };
+		4A2C47A72ABA26C900451B2B /* RemoteCommandAccepted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCommandAccepted.swift; sourceTree = "<group>"; };
+		4A2C47A82ABA26C900451B2B /* PorscheConnect+RemoteCommandStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+RemoteCommandStatus.swift"; sourceTree = "<group>"; };
+		4A2C47AA2ABA26C900451B2B /* PorscheConnect+Flash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Flash.swift"; sourceTree = "<group>"; };
+		4A2C47AC2ABA26C900451B2B /* PorscheConnect+LockUnlockLastActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+LockUnlockLastActions.swift"; sourceTree = "<group>"; };
+		4A2C47AD2ABA26C900451B2B /* PorscheConnect+Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Lock.swift"; sourceTree = "<group>"; };
+		4A2C47AE2ABA26C900451B2B /* PorscheConnect+Unlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Unlock.swift"; sourceTree = "<group>"; };
+		4A2C47B02ABA26C900451B2B /* PorscheConnect+ToggleDirectCharging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+ToggleDirectCharging.swift"; sourceTree = "<group>"; };
+		4A2C47B22ABA26C900451B2B /* PorscheConnect+ToggleDirectClimatisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+ToggleDirectClimatisation.swift"; sourceTree = "<group>"; };
+		4A2C47B32ABA26C900451B2B /* PorscheConnect+Stored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Stored.swift"; sourceTree = "<group>"; };
+		4A2C47B42ABA26C900451B2B /* PorscheConnect+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Auth.swift"; sourceTree = "<group>"; };
+		4A2C47B52ABA26C900451B2B /* PorscheConnect+Pictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Pictures.swift"; sourceTree = "<group>"; };
+		4A2C47B62ABA26C900451B2B /* PorscheConnect+Capabilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Capabilities.swift"; sourceTree = "<group>"; };
+		4A2C47B72ABA26C900451B2B /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		4A2C47B82ABA26C900451B2B /* PorscheConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorscheConnect.swift; sourceTree = "<group>"; };
+		4A2C47B92ABA26C900451B2B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A493E5D28FEE78B00EE0E35 /* MyPorscheExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyPorscheExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A493E5E28FEE78B00EE0E35 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4A493E6028FEE78B00EE0E35 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -97,16 +177,6 @@
 		4A493E6628FEE78C00EE0E35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A493E6828FEE78C00EE0E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A787D6128D7E74F00EF8EE9 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
-		4A8E326128DD024800A19B27 /* PorscheConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorscheConnect.swift; sourceTree = "<group>"; };
-		4A8E326228DD024800A19B27 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		4A8E326328DD024900A19B27 /* PorscheConnect+Portal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Portal.swift"; sourceTree = "<group>"; };
-		4A8E326428DD024900A19B27 /* NetworkRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRoutes.swift; sourceTree = "<group>"; };
-		4A8E326528DD024900A19B27 /* PorscheConnect+CarControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+CarControl.swift"; sourceTree = "<group>"; };
-		4A8E326628DD024900A19B27 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		4A8E326728DD024900A19B27 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		4A8E326828DD024900A19B27 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		4A8E326928DD024900A19B27 /* PorscheConnect+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PorscheConnect+Auth.swift"; sourceTree = "<group>"; };
-		4A8E326A28DD024900A19B27 /* CodeChallenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeChallenger.swift; sourceTree = "<group>"; };
 		4A8E327528DD08D400A19B27 /* PorscheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorscheManager.swift; sourceTree = "<group>"; };
 		4A8E327728DD13AE00A19B27 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		4A8E327928DD13D500A19B27 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -171,6 +241,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A2C47812ABA26C800451B2B /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47822ABA26C900451B2B /* OAuth */,
+				4A2C47852ABA26C900451B2B /* Extensions */,
+				4A2C47892ABA26C900451B2B /* HTTP */,
+			);
+			name = Foundations;
+			path = "../../../../../../Downloads/porsche-connect-main 2/Sources/PorscheConnect/Foundations";
+			sourceTree = "<group>";
+		};
+		4A2C47822ABA26C900451B2B /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47832ABA26C900451B2B /* OAuthApplication.swift */,
+				4A2C47842ABA26C900451B2B /* AuthStoring.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		4A2C47852ABA26C900451B2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47862ABA26C900451B2B /* URL+Params.swift */,
+				4A2C47872ABA26C900451B2B /* Color+Hex.swift */,
+				4A2C47882ABA26C900451B2B /* String+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A2C47892ABA26C900451B2B /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C478A2ABA26C900451B2B /* HttpStatusCode.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		4A2C478B2ABA26C900451B2B /* CommonResponseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C478C2ABA26C900451B2B /* Picture.swift */,
+				4A2C478D2ABA26C900451B2B /* RemainingRanges.swift */,
+				4A2C478E2ABA26C900451B2B /* GenericValue.swift */,
+				4A2C478F2ABA26C900451B2B /* Distance.swift */,
+				4A2C47902ABA26C900451B2B /* ServiceIntervals.swift */,
+				4A2C47912ABA26C900451B2B /* FuelConsumption.swift */,
+				4A2C47922ABA26C900451B2B /* Tires.swift */,
+				4A2C47932ABA26C900451B2B /* Doors.swift */,
+				4A2C47942ABA26C900451B2B /* Pressure.swift */,
+				4A2C47952ABA26C900451B2B /* Speed.swift */,
+				4A2C47962ABA26C900451B2B /* ElectricEngineConsumption.swift */,
+				4A2C47972ABA26C900451B2B /* Windows.swift */,
+			);
+			name = CommonResponseObjects;
+			path = "../../../../../../Downloads/porsche-connect-main 2/Sources/PorscheConnect/CommonResponseObjects";
+			sourceTree = "<group>";
+		};
+		4A2C47982ABA26C900451B2B /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47992ABA26C900451B2B /* GenericValueFormatter.swift */,
+				4A2C479A2ABA26C900451B2B /* TimestampFormatter.swift */,
+				4A2C479B2ABA26C900451B2B /* DistanceFormatter.swift */,
+			);
+			name = Formatters;
+			path = "../../../../../../Downloads/porsche-connect-main 2/Sources/PorscheConnect/Formatters";
+			sourceTree = "<group>";
+		};
+		4A2C479E2ABA26C900451B2B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C479F2ABA26C900451B2B /* PorscheConnect+Trips.swift */,
+				4A2C47A02ABA26C900451B2B /* PorscheConnect+Emobility.swift */,
+				4A2C47A12ABA26C900451B2B /* PorscheConnect+Maintenance.swift */,
+				4A2C47A22ABA26C900451B2B /* PorscheConnect+Vehicles.swift */,
+				4A2C47A32ABA26C900451B2B /* PorscheConnect+Status.swift */,
+				4A2C47A42ABA26C900451B2B /* PorscheConnect+Position.swift */,
+				4A2C47A52ABA26C900451B2B /* PorscheConnect+Summary.swift */,
+				4A2C47A62ABA26C900451B2B /* RemoteCommands */,
+				4A2C47B32ABA26C900451B2B /* PorscheConnect+Stored.swift */,
+				4A2C47B42ABA26C900451B2B /* PorscheConnect+Auth.swift */,
+				4A2C47B52ABA26C900451B2B /* PorscheConnect+Pictures.swift */,
+				4A2C47B62ABA26C900451B2B /* PorscheConnect+Capabilities.swift */,
+			);
+			name = APIs;
+			path = "../../../../../../Downloads/porsche-connect-main 2/Sources/PorscheConnect/APIs";
+			sourceTree = "<group>";
+		};
+		4A2C47A62ABA26C900451B2B /* RemoteCommands */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47A72ABA26C900451B2B /* RemoteCommandAccepted.swift */,
+				4A2C47A82ABA26C900451B2B /* PorscheConnect+RemoteCommandStatus.swift */,
+				4A2C47A92ABA26C900451B2B /* Flash */,
+				4A2C47AB2ABA26C900451B2B /* LockUnlock */,
+				4A2C47AF2ABA26C900451B2B /* DirectCharging */,
+				4A2C47B12ABA26C900451B2B /* DirectClimatisation */,
+			);
+			path = RemoteCommands;
+			sourceTree = "<group>";
+		};
+		4A2C47A92ABA26C900451B2B /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47AA2ABA26C900451B2B /* PorscheConnect+Flash.swift */,
+			);
+			path = Flash;
+			sourceTree = "<group>";
+		};
+		4A2C47AB2ABA26C900451B2B /* LockUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47AC2ABA26C900451B2B /* PorscheConnect+LockUnlockLastActions.swift */,
+				4A2C47AD2ABA26C900451B2B /* PorscheConnect+Lock.swift */,
+				4A2C47AE2ABA26C900451B2B /* PorscheConnect+Unlock.swift */,
+			);
+			path = LockUnlock;
+			sourceTree = "<group>";
+		};
+		4A2C47AF2ABA26C900451B2B /* DirectCharging */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47B02ABA26C900451B2B /* PorscheConnect+ToggleDirectCharging.swift */,
+			);
+			path = DirectCharging;
+			sourceTree = "<group>";
+		};
+		4A2C47B12ABA26C900451B2B /* DirectClimatisation */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C47B22ABA26C900451B2B /* PorscheConnect+ToggleDirectClimatisation.swift */,
+			);
+			path = DirectClimatisation;
+			sourceTree = "<group>";
+		};
 		4A493E6228FEE78B00EE0E35 /* MyPorsche */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,16 +417,15 @@
 			isa = PBXGroup;
 			children = (
 				4A24BA4E2901948F00A57060 /* Porsche Widget.entitlements */,
-				4A8E326A28DD024900A19B27 /* CodeChallenger.swift */,
-				4A8E326228DD024800A19B27 /* Constants.swift */,
-				4A8E326728DD024900A19B27 /* Extensions.swift */,
-				4A8E326828DD024900A19B27 /* Models.swift */,
-				4A8E326628DD024900A19B27 /* NetworkClient.swift */,
-				4A8E326428DD024900A19B27 /* NetworkRoutes.swift */,
-				4A8E326128DD024800A19B27 /* PorscheConnect.swift */,
-				4A8E326928DD024900A19B27 /* PorscheConnect+Auth.swift */,
-				4A8E326528DD024900A19B27 /* PorscheConnect+CarControl.swift */,
-				4A8E326328DD024900A19B27 /* PorscheConnect+Portal.swift */,
+				4A2C479E2ABA26C900451B2B /* APIs */,
+				4A2C478B2ABA26C900451B2B /* CommonResponseObjects */,
+				4A2C47B92ABA26C900451B2B /* Constants.swift */,
+				4A2C47B72ABA26C900451B2B /* Environment.swift */,
+				4A2C47982ABA26C900451B2B /* Formatters */,
+				4A2C47812ABA26C800451B2B /* Foundations */,
+				4A2C479D2ABA26C900451B2B /* NetworkClient.swift */,
+				4A2C479C2ABA26C900451B2B /* NetworkRoutes.swift */,
+				4A2C47B82ABA26C900451B2B /* PorscheConnect.swift */,
 				4AE4AD2628D5C11A0055FEA8 /* AppDelegate.swift */,
 				4AE4AD2828D5C11A0055FEA8 /* SceneDelegate.swift */,
 				4AE4AD2A28D5C11A0055FEA8 /* ViewController.swift */,
@@ -560,26 +765,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2C47E22ABA26C900451B2B /* PorscheConnect+Pictures.swift in Sources */,
+				4A2C47CF2ABA26C900451B2B /* NetworkRoutes.swift in Sources */,
+				4A2C47C12ABA26C900451B2B /* RemainingRanges.swift in Sources */,
+				4A2C47C02ABA26C900451B2B /* Picture.swift in Sources */,
+				4A2C47C82ABA26C900451B2B /* Pressure.swift in Sources */,
+				4A2C47C92ABA26C900451B2B /* Speed.swift in Sources */,
+				4A2C47BB2ABA26C900451B2B /* AuthStoring.swift in Sources */,
+				4A2C47D72ABA26C900451B2B /* PorscheConnect+Summary.swift in Sources */,
+				4A2C47D62ABA26C900451B2B /* PorscheConnect+Position.swift in Sources */,
 				4A787D6228D7E74F00EF8EE9 /* LoginPage.swift in Sources */,
-				4A8E327028DD024900A19B27 /* NetworkClient.swift in Sources */,
+				4A2C47BE2ABA26C900451B2B /* String+Hex.swift in Sources */,
+				4A2C47DB2ABA26C900451B2B /* PorscheConnect+LockUnlockLastActions.swift in Sources */,
+				4A2C47D42ABA26C900451B2B /* PorscheConnect+Vehicles.swift in Sources */,
 				4A8E327628DD08D400A19B27 /* PorscheManager.swift in Sources */,
-				4A8E326B28DD024900A19B27 /* PorscheConnect.swift in Sources */,
-				4A8E327228DD024900A19B27 /* Models.swift in Sources */,
-				4A8E327328DD024900A19B27 /* PorscheConnect+Auth.swift in Sources */,
+				4A2C47CC2ABA26C900451B2B /* GenericValueFormatter.swift in Sources */,
 				4A8E327A28DD13D500A19B27 /* Home.swift in Sources */,
+				4A2C47D12ABA26C900451B2B /* PorscheConnect+Trips.swift in Sources */,
+				4A2C47C52ABA26C900451B2B /* FuelConsumption.swift in Sources */,
+				4A2C47CA2ABA26C900451B2B /* ElectricEngineConsumption.swift in Sources */,
 				4AA8127D28F8585600DB9718 /* SplashscreenPage.swift in Sources */,
+				4A2C47D92ABA26C900451B2B /* PorscheConnect+RemoteCommandStatus.swift in Sources */,
+				4A2C47E52ABA26C900451B2B /* PorscheConnect.swift in Sources */,
+				4A2C47DC2ABA26C900451B2B /* PorscheConnect+Lock.swift in Sources */,
+				4A2C47BD2ABA26C900451B2B /* Color+Hex.swift in Sources */,
+				4A2C47C32ABA26C900451B2B /* Distance.swift in Sources */,
+				4A2C47D82ABA26C900451B2B /* RemoteCommandAccepted.swift in Sources */,
+				4A2C47C42ABA26C900451B2B /* ServiceIntervals.swift in Sources */,
 				4A8E327828DD13AE00A19B27 /* HomeNavigationController.swift in Sources */,
-				4A8E326E28DD024900A19B27 /* NetworkRoutes.swift in Sources */,
-				4A8E326F28DD024900A19B27 /* PorscheConnect+CarControl.swift in Sources */,
-				4A8E326D28DD024900A19B27 /* PorscheConnect+Portal.swift in Sources */,
+				4A2C47D32ABA26C900451B2B /* PorscheConnect+Maintenance.swift in Sources */,
+				4A2C47CE2ABA26C900451B2B /* DistanceFormatter.swift in Sources */,
+				4A2C47CD2ABA26C900451B2B /* TimestampFormatter.swift in Sources */,
+				4A2C47DE2ABA26C900451B2B /* PorscheConnect+ToggleDirectCharging.swift in Sources */,
+				4A2C47C62ABA26C900451B2B /* Tires.swift in Sources */,
 				4AE4AD2B28D5C11A0055FEA8 /* ViewController.swift in Sources */,
+				4A2C47D52ABA26C900451B2B /* PorscheConnect+Status.swift in Sources */,
+				4A2C47E32ABA26C900451B2B /* PorscheConnect+Capabilities.swift in Sources */,
+				4A2C47BF2ABA26C900451B2B /* HttpStatusCode.swift in Sources */,
+				4A2C47E02ABA26C900451B2B /* PorscheConnect+Stored.swift in Sources */,
+				4A2C47E12ABA26C900451B2B /* PorscheConnect+Auth.swift in Sources */,
+				4A2C47E62ABA26C900451B2B /* Constants.swift in Sources */,
 				4A493E6A28FEE78C00EE0E35 /* MyPorsche.intentdefinition in Sources */,
-				4A8E327428DD024900A19B27 /* CodeChallenger.swift in Sources */,
+				4A2C47DD2ABA26C900451B2B /* PorscheConnect+Unlock.swift in Sources */,
 				4AE4AD2728D5C11A0055FEA8 /* AppDelegate.swift in Sources */,
+				4A2C47D02ABA26C900451B2B /* NetworkClient.swift in Sources */,
 				4A16D6552913CF660058AB6A /* WebViewPage.swift in Sources */,
+				4A2C47D22ABA26C900451B2B /* PorscheConnect+Emobility.swift in Sources */,
+				4A2C47C22ABA26C900451B2B /* GenericValue.swift in Sources */,
 				4AE4AD2928D5C11A0055FEA8 /* SceneDelegate.swift in Sources */,
-				4A8E327128DD024900A19B27 /* Extensions.swift in Sources */,
-				4A8E326C28DD024900A19B27 /* Constants.swift in Sources */,
+				4A2C47CB2ABA26C900451B2B /* Windows.swift in Sources */,
+				4A2C47BC2ABA26C900451B2B /* URL+Params.swift in Sources */,
+				4A2C47DA2ABA26C900451B2B /* PorscheConnect+Flash.swift in Sources */,
+				4A2C47E42ABA26C900451B2B /* Environment.swift in Sources */,
+				4A2C47BA2ABA26C900451B2B /* OAuthApplication.swift in Sources */,
+				4A2C47C72ABA26C900451B2B /* Doors.swift in Sources */,
+				4A2C47DF2ABA26C900451B2B /* PorscheConnect+ToggleDirectClimatisation.swift in Sources */,
 				4AA8127F28F85B1600DB9718 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
