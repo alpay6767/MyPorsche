@@ -51,7 +51,9 @@ class Home: UIViewController {
     
     func setAsWidget() {
         let defaults = UserDefaults(suiteName: "group.myporsche")
-        defaults!.set(Home.porscheManager.vehicles![0].pictures![3].url, forKey: "selectedWidget")
+        if(Home.porscheManager.vehicles![0].pictures !=  nil) {
+            defaults!.set(Home.porscheManager.vehicles![0].pictures![3].url, forKey: "selectedWidget")
+        }
         defaults?.synchronize()
         WidgetCenter.shared.reloadAllTimelines()
     }
@@ -77,7 +79,9 @@ class Home: UIViewController {
                 Home.porscheManager.vehicles = vehicles
                 car_name.text = "Porsche " + Home.porscheManager.vehicles![0].modelDescription
                 car_vin.text = Home.porscheManager.vehicles![0].vin
-                car_image.kf.setImage(with: Home.porscheManager.vehicles![0].pictures![0].url)
+                if(Home.porscheManager.vehicles![0].pictures !=  nil) {
+                    car_image.kf.setImage(with: Home.porscheManager.vehicles![0].pictures![0].url)
+                }
                 setAsWidget()
                 self.scrollView.hideSkeleton()
                 //self.view.hideSkeleton()
